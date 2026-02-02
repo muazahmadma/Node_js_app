@@ -1,4 +1,19 @@
-.page-title{
-    padding-left: 20px;
-    font-size: 4em;
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+.table td, .table th {
+    vertical-align: middle;
 }

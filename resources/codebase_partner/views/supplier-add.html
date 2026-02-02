@@ -1,17 +1,34 @@
 {{>header}}
-<div class="container">
-    {{>nav}}
-    <div class="mt-2">
-        {{#errors}}
-        <div class="alert alert-warning" role="alert">
-            {{msg}}
-        </div>
-        {{/errors}}
-    </div>
-    <form action="/supplier-add" method="POST">
-        {{>supplier-form-fields}}
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+{{>nav}}
 
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">➕ Add New Student</h4>
+                </div>
+
+                <div class="card-body">
+                    {{#errors}}
+                    <div class="alert alert-warning">{{msg}}</div>
+                    {{/errors}}
+
+                    <form action="/supplier-add" method="POST">
+                        {{>supplier-form-fields}}
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                Save Student
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
+
 {{>footer}}
